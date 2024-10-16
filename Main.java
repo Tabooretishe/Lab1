@@ -22,13 +22,10 @@ public class Main {
                     a2=4;
                     xu=x;
                     xu = xu / (int)Math.pow(10,u);
-                    out.println(xu);
                     while(xu>9 && a2>u) {
                         xu = xu % 10;
                         a2--;
                     }
-                    out.println(xu);
-                    out.println(" ");
                     if (xu == xi)
                         Repeat = true;
             }}
