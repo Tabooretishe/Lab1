@@ -111,7 +111,7 @@ graph TD
 
 ```
 
-![img.png](refs/img.png)
+![img.png](img.png)
 
 ### 5. Программа
 
