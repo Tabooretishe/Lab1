@@ -103,7 +103,7 @@ graph TD
     N -- Нет -->QQ[u=u+1]
     N -- Да --> FE[Repeat = true]
     FE --> QQ
-    QQ --> Q
+    QQ --> O
     Q --> R
     P -- Да --> L[/Вывод: "YES"/]
     P -- Нет -->K[/Вывод: "NO"/]
