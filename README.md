@@ -94,7 +94,7 @@ graph TD
     I-->S
     S-- Нет --> X[u=0]
     X-->O{u<i}
-    O -- Нет --> Q
+    O -- Нет --> Q[i=i-1]
     O-- Да --> F["a2=4; xu=x; xu=xu/(int)Math.pow(10,u)"]
     F-->M{xu>9 И a2>u}
     M-- Нет --> QQ[u=u+1]
@@ -102,7 +102,7 @@ graph TD
     G-->M
     QQ-->O
     N{xu==xi}
-    N-- Нет --> Q[i=i-1]
+    N-- Нет --> Q
     N-- Да --> FE[Repeat = true]
     FE-->Q
     Q-->R
