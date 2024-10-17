@@ -85,30 +85,30 @@ graph TD
     A([Начало]) --> B[/Ввести: x/]
     B --> C{x/1000==0 ИЛИ x/10000>0}
     C -- Да --> D[/Вывод: "NO"/]
-    C -- Нет --> Y[i=3]
+    C -- Нет -->Y[i=3]
     Y --> R{i>0}
-    R -- Нет --> P{Repeat == false}
+    R -- Нет -->P{Repeat == false}
     R -- Да --> W["a1=4-i; xi=x; xi=xi/(int)Math.pow(10,i)"]
     W --> S{xi>9 И a1>1}
     S -- Да --> I[xi=xi%10; a1=a1-1]
     I --> S
-    S -- Нет --> X[u=0]
-    X --> O{"u<i"}
-    O -- Нет --> Q[i=i-1]
+    S -- Нет -->X[u=0]
+    X --> O{"i>u"}
+    O -- Нет -->Q[i=i-1]
     O -- Да --> F["a2=4; xu=x; xu=xu/(int)Math.pow(10,u)"]
     F --> M{xu>9 И a2>u}
-    M -- Нет --> N{xu==xi}
+    M -- Нет -->N{xu==xi}
     M -- Да --> G[xu=xu%10; a2=a2-1]
     G --> M
-    N-- Нет --> QQ[u=u+1]
-    N-- Да --> FE[Repeat = true]
+    N -- Нет -->QQ[u=u+1]
+    N -- Да --> FE[Repeat = true]
     FE --> QQ
     QQ --> Q
     Q --> R
-    P--Да-->L[/Вывод: "YES"/]
-    P--Нет-->K[/Вывод: "NO"/]
-    K-->Z
-    L-->Z
+    P -- Да --> L[/Вывод: "YES"/]
+    P -- Нет -->K[/Вывод: "NO"/]
+    K --> Z
+    L --> Z
     D --> Z([Конец])
 
 ```
