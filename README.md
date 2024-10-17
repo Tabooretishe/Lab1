@@ -90,8 +90,6 @@ graph TD
     R -- Нет -->P{Repeat == false}
     R -- Да --> W["a1=4-i; xi=x; xi=xi/(int)Math.pow(10,i)"]
     W --> S{xi>9 И a1>1}
-    S -- Да --> I[xi=xi%10; a1=a1-1]
-    I --> S
     S -- Нет -->X[u=0]
     X --> O{"i>u"}
     O -- Нет -->Q[i=i-1]
@@ -104,6 +102,8 @@ graph TD
     N -- Да --> FE[Repeat = true]
     FE --> QQ
     QQ --> O
+    S -- Да --> I[xi=xi%10; a1=a1-1]
+    I --> S
     Q --> R
     P -- Да --> L[/Вывод: "YES"/]
     P -- Нет -->K[/Вывод: "NO"/]
