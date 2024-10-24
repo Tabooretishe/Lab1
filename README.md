@@ -106,8 +106,6 @@ graph TD
 
 ```
 
-![img.png](img.png)
-
 ### 5. Программа
 
 ```markdown
