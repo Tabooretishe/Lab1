@@ -145,7 +145,7 @@ graph TD
             if (x / 100 % 10 == x % 10)
                 Repeat = true;
             // Если третий и четвёртый знаки в числе x повторяются, приравниваем Repeat к true
-            if (x % 10 == x / 100 % 10)
+            if (x /100 % 10 == x % 10)
                 Repeat = true;
             // Если Repeat равна false, выводим "YES", иначе выводим "NO"
             if (Repeat == false)
