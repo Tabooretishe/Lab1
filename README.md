@@ -151,8 +151,8 @@ graph TD
                 out.print("YES");
             else
                 out.print("NO");
-        }
-        }
+            }
+          }    
         }
     ```
 ```
