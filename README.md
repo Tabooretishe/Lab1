@@ -95,7 +95,7 @@ graph TD
     G -- Да --> X[Repeat=true]
     G -- Нет--> H{"x / 100 % 10 == x % 10"}
     H -- Да --> X[Repeat=true]
-    H -- Нет--> J{"x % 10 == x / 100 % 10"}
+    H -- Нет--> J{"x / 10 % 10 % 10 == x % 10"}
     J -- Да --> X[Repeat=true]
     J -- Нет--> L{Repeat==false}
     X --> L
