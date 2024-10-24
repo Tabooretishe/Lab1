@@ -99,8 +99,8 @@ graph TD
     J -- Да --> X[Repeat=true]
     J -- Нет--> L{Repeat==false}
     X --> L
-    L -- Да --> P[/Вывод: "YES"/]
     L -- Нет--> K[/Вывод: "NO"/]
+    L -- Да --> P[/Вывод: "YES"/]
     P --> Z
     K --> Z([Конец])
 
