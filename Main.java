@@ -19,7 +19,7 @@ public class Main {
                 Repeat = true;
             if (x / 100 % 10 == x % 10)
                 Repeat = true;
-            if (x % 10 == x / 100 % 10)
+            if (x / 10 % 10 % 10 == x % 10)
                 Repeat = true;
             if (Repeat == false)
                 out.print("YES");
